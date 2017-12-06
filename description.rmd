@@ -107,10 +107,10 @@ When developing packages locally, you never need to use `Suggests`. When releasi
 The easiest way to add `Imports` and `Suggests` to your package is to use `devtools::use_package()`. This automatically puts them in the right place in your `DESCRIPTION`, and reminds you how to use them.
 
 ```{r, eval = FALSE}
-devtools::use_package("dplyr") # Defaults to imports
+usethis::use_package("dplyr") # Defaults to imports
 #> Adding dplyr to Imports
 #> Refer to functions with dplyr::fun()
-devtools::use_package("dplyr", "Suggests")
+usethis::use_package("dplyr", "Suggests")
 #> Adding dplyr to Suggests
 #> Use requireNamespace("dplyr", quietly = TRUE) to test if package is 
 #>  installed, then use dplyr::fun() to refer to functions.
